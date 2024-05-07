@@ -14,7 +14,7 @@ apis = [r"https://youtube.076.ne.jp/",r"https://vid.puffyan.us/",r"https://inv.r
 url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instance.txt').text.rstrip()
 version = "1.0"
 os.environ['RENDER_EXTERNAL_URL'] = 'https://dummy.onrender.com'
-request.scope["headers"]["x-forwarded-for"] = "123.4.302.3"
+headers = {"x-forwarded-for": "123.4.302.3"}
 
 apichannels = []
 apicomments = []
